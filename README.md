@@ -1,4 +1,4 @@
-# [Boundary-Aware Feature Propagation for Scene Segmentation](http:)
+# [Vision-Language Transformer and Query Generation for Referring Segmentation](http:)
 
 
   - Please consider citing our paper in your publications if the project helps your research.
