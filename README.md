@@ -9,6 +9,13 @@ Please consider citing our paper in your publications if the project helps your 
   year={2021}
 }
 ```
+
+## Introduction
+
+Vision-Language Transformer (VLT) is a framework for referring segmentation task. Our method produces multiple query vector for one input language expression, and use each of them to “query” the input image, generating a set of responses. Then the network selectively aggregates these responses, in which queries that provide better comprehensions are spotlighted.
+
+<center><img src="fig0.png" width="500px"></center>
+
 ## Installation
 
 1. Environment:
