@@ -130,9 +130,12 @@ class Evaluate(keras.callbacks.Callback):
 
                 if self.log_images:
                     sent = sentences[i]['sent']
-                    cv2.imwrite('log/out_img/'+str(files_id[i])+'_'+sent+'_pred.png', pred_seg * 255)
-                    cv2.imwrite('log/out_img/'+str(files_id[i])+'_'+sent+'_gt.png', gt_segs[i])
-                    cv2.imwrite('log/out_img/'+str(files_id[i])+'_'+sent+'_img.png', images[i][dy:nh + dy, dx:nw + dx, ...] * 255)
+                    wstatus1 = cv2.imwrite('log/out_img/'+str(files_id[i])+'_'+sent+'_pred.png', pred_seg * 255)
+                    wstatus2 = cv2.imwrite('log/out_img/'+str(files_id[i])+'_'+sent+'_gt.png', gt_segs[i])
+                    wstatus3 = cv2.imwrite('log/out_img/'+str(files_id[i])+'_'+sent+'_img.png', images[i][dy:nh + dy, dx:nw + dx, ...] * 255)
+                    if not (wstatus1 and wstatus2 and wstatus3):
+                        import pdb
+                        pdb.set_trace()
 
         pred_seg = iou_all / img_id
         for item in prec_all:

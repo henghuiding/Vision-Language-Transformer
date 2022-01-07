@@ -135,3 +135,6 @@ data/data_v2
 log/
 .vscode
 result/
+.idea/
+data/
+*.png

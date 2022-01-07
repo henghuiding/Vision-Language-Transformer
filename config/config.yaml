@@ -1,0 +1,15 @@
+train_set: ./data/data_v2/anns/refcoco+/train.json
+evaluate_set: ./data/data_v2/anns/refcoco+/val.json
+seg_gt_path: ./data/data_v2/masks/refcoco+
+log_path: ./log/refcocop
+evaluate_model: ./log/refcocop_example/models/best_map.h5
+log_images: 1
+
+transformer_encoder_num: 2
+transformer_decoder_num: 2
+
+batch_size: 32
+workers: 4
+
+num_query: 16
+query_balance: True

@@ -28,6 +28,7 @@ Vision-Language Transformer (VLT) is a framework for referring segmentation task
    - SpaCy model for embedding: 
       
       ```python -m spacy download en_vectors_web_lg```
+   - **Note from Yash** — Install `pycocotools==2.0.0` with pip after installing requirements.txt
 
 2. Dataset preparation
 
@@ -71,3 +72,4 @@ Vision-Language Transformer (VLT) is a framework for referring segmentation task
 ## Acknowledgement
 
 We borrowed a lot of codes from [MCN](https://github.com/luogen1996/MCN), [keras-transformer](https://github.com/CyberZHG/keras-transformer), [RefCOCO API](https://github.com/lichengunc/refer) and [keras-yolo3](https://github.com/qqwweee/keras-yolo3). Thanks for their excellent works!
+

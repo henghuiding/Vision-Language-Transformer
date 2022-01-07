@@ -1,5 +1,4 @@
 tensorflow-gpu==1.15
-pycocotools==2.0.0
 matplotlib==3.0.2
 numpy==1.19.5
 scikit-image==0.14.2
